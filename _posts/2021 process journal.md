@@ -269,3 +269,20 @@ Also, the @Repository specializes the @Component notaion because it allows the @
 to implement classes which is autodetected through a classpath scan:
 
 <img width="605" alt="Screen Shot 2021-05-02 at 3 20 31 PM" src="https://user-images.githubusercontent.com/73371470/116804458-efe2f680-ab59-11eb-9028-cac7df045a3e.png">
+
+- ## **Day 5**
+
+
+Today, I have brain stormed for a significant amount of time on deciding a project to work on for the next semester. I listed out ubiquitous parts of humanity, like schools, jobs, tech, etc, then I research about the flaws of the prominate factors of life in order to create a service that can secure the flaws. However, several ideas were already innovated to secure any flaws or inconvenience. Therefore, I moved on to making a service which is approachable by all individuals in order to increase clients.
+
+- Coding Idea
+
+*Music:*
+
+Emotion choosing (when the web or app is opened), then recommending a list of songs
+
+Or
+
+Weather API of location, then recommending songs relevant to the weather
+
+But, the topic does not have to be limited to music, the emotion and weather values can output another topic, like videos, etc
