@@ -290,21 +290,38 @@ But, the topic does not have to be limited to music, the emotion and weather val
 
 - ## **Day 5**
 
-- #IOS
+
+- ### IOS
 As, I finished brainstorming my topic/idea, I began to design and construct my client by using a application called sketch. First I download sketch, then began to adapt myself to the environment. Moreover, the UI of the application was explicit and coherent; therefore, I was able to accelerate my process of constructing my client. In order to display my plan I began by outlining specific pages for the client.
 - sign up
 
 When the user enters the application, the server directs them to the sign up page where they have to enter their name, emial, username and password. Then, if the user clicks the sign up button, the prototype directs the client to the login page
+
+<img width="193" alt="Screen Shot 2021-05-16 at 11 49 30 AM" src="https://user-images.githubusercontent.com/73371470/118383869-ca1b1e80-b63c-11eb-8d94-6b9dcaf89f5c.png">
+
 - longin
 
 When the client enters the login page, they have to enter their username and password established on the signup page to continue. Then, if the client clicks the login button, the prototype directs the client to the main page
+
+<img width="215" alt="Screen Shot 2021-05-16 at 11 50 09 AM" src="https://user-images.githubusercontent.com/73371470/118383878-e0c17580-b63c-11eb-9265-05eab0275bdb.png">
+
 - main 
 
 The main page contains the weather API and the mood checker, where the client chooses a specific mood, so that the server that recommend a playlist according to the mood. There are 3 different moods: happy, sad and angry, and when the client clicks on one of them the server directs them to the detail page.
+
+<img width="197" alt="Screen Shot 2021-05-16 at 11 50 25 AM" src="https://user-images.githubusercontent.com/73371470/118383881-e919b080-b63c-11eb-8052-0a7cf640a583.png">
+
 - details
 The detail page displays the list of songs according to the mood, and provides a mini-player on the bottom of the page in order to allow the client to understand what song they are currently listening to.
 
-- #PC or Tablet
+<img width="205" alt="Screen Shot 2021-05-16 at 11 50 34 AM" src="https://user-images.githubusercontent.com/73371470/118383884-ef0f9180-b63c-11eb-89aa-8d131cd129af.png">
+
+- IOS page:
+
+<img width="811" alt="Screen Shot 2021-05-16 at 11 51 06 AM" src="https://user-images.githubusercontent.com/73371470/118383891-0189cb00-b63d-11eb-8eb1-5f9308eee62a.png">
+
+
+- ### PC or Tablet
 
 However, this design is only limited to IOS users, therefore, I formed another format for pc or ipad users.
 The design contains all aspects, functions and pages stated above, but with some additional pages that enhance the convenience of the service. 
@@ -312,7 +329,18 @@ Additional pages:
 - playlist choosing page
 
 the choosing page is directed to the user depending on what mood they chose. The page recommends several playlists and allows the client to search for specific sons. Moreover, the page has a section on top and if the client clicks on that button the page directs the client to the mood page, so that the client can change their mood status. 
+
+<img width="501" alt="Screen Shot 2021-05-16 at 11 51 22 AM" src="https://user-images.githubusercontent.com/73371470/118383897-0c446000-b63d-11eb-87a7-e8bd6704a6bc.png">
+
 - mini player page
 
 As said before the detail page includes a mini-player on the bottom, and this page extends the mini-player when clicked on. The page includes basic information on their mood status, song, and how much the song durated. Moreover, the bottom section allows the user to rewind, pause/start or skip the song.
+
+<img width="550" alt="Screen Shot 2021-05-16 at 11 51 37 AM" src="https://user-images.githubusercontent.com/73371470/118383903-149c9b00-b63d-11eb-9841-35dd079b6993.png">
+
+
+- PC page:
+
+<img width="1076" alt="Screen Shot 2021-05-16 at 11 52 19 AM" src="https://user-images.githubusercontent.com/73371470/118383913-2ed67900-b63d-11eb-935e-f35f90f161c8.png">
+
 
