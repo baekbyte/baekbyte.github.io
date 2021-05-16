@@ -286,3 +286,33 @@ Or
 Weather API of location, then recommending songs relevant to the weather
 
 But, the topic does not have to be limited to music, the emotion and weather values can output another topic, like videos, etc
+
+
+- ## **Day 5**
+
+- #IOS
+As, I finished brainstorming my topic/idea, I began to design and construct my client by using a application called sketch. First I download sketch, then began to adapt myself to the environment. Moreover, the UI of the application was explicit and coherent; therefore, I was able to accelerate my process of constructing my client. In order to display my plan I began by outlining specific pages for the client.
+- sign up
+
+When the user enters the application, the server directs them to the sign up page where they have to enter their name, emial, username and password. Then, if the user clicks the sign up button, the prototype directs the client to the login page
+- longin
+
+When the client enters the login page, they have to enter their username and password established on the signup page to continue. Then, if the client clicks the login button, the prototype directs the client to the main page
+- main 
+
+The main page contains the weather API and the mood checker, where the client chooses a specific mood, so that the server that recommend a playlist according to the mood. There are 3 different moods: happy, sad and angry, and when the client clicks on one of them the server directs them to the detail page.
+- details
+The detail page displays the list of songs according to the mood, and provides a mini-player on the bottom of the page in order to allow the client to understand what song they are currently listening to.
+
+- #PC or Tablet
+
+However, this design is only limited to IOS users, therefore, I formed another format for pc or ipad users.
+The design contains all aspects, functions and pages stated above, but with some additional pages that enhance the convenience of the service. 
+Additional pages:
+- playlist choosing page
+
+the choosing page is directed to the user depending on what mood they chose. The page recommends several playlists and allows the client to search for specific sons. Moreover, the page has a section on top and if the client clicks on that button the page directs the client to the mood page, so that the client can change their mood status. 
+- mini player page
+
+As said before the detail page includes a mini-player on the bottom, and this page extends the mini-player when clicked on. The page includes basic information on their mood status, song, and how much the song durated. Moreover, the bottom section allows the user to rewind, pause/start or skip the song.
+
