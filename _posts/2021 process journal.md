@@ -344,3 +344,5 @@ As said before the detail page includes a mini-player on the bottom, and this pa
 <img width="1076" alt="Screen Shot 2021-05-16 at 11 52 19 AM" src="https://user-images.githubusercontent.com/73371470/118383913-2ed67900-b63d-11eb-935e-f35f90f161c8.png">
 
 
+- ## **Day 6**
+
