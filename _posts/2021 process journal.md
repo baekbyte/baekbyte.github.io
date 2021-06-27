@@ -438,7 +438,7 @@ As test cases are correlated to the repository it will be logical to include tes
 - Order Repository
 
 
-- ## **Day 9**
+- ## **Day 10**
 
 Today I touched upon the @Repository classes and JUnit Test cases (partially), in particular - the test cases - the JUnit, as it is crucial for a pre-emptive solution for potential faliures. Again, this applies to all five facets:
 
