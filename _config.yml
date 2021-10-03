@@ -96,9 +96,9 @@ analytics:
 author:
   name             : "Nathan Baek"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a **freshman** from GSIS."
+  bio              : "I am a **sophomore** from GSIS."
   location         : "South Korea"
-  email            :
+  email            : "baeks24@gsiscommunity.kr"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
