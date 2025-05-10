@@ -1,0 +1,12 @@
+{% assign group_names = "" | split: "" %}
+{% assign group_items = "" | split: "" %}
+
+{% for item in include.collection %}
+  {% assign group_name = item[include.field] | first %}
+  {% unless group_names contains group_name %}
+    {% assign group_names = group_names | push: group_name %}
+    {% assign group_items = group_items | push: "" | split: "" %}
+  {% endunless %}
+  {% assign group_index = group_names | index_of: group_name %}
+  {% assign group_items[group_index] = group_items[group_index] | push: item %}
+{% endfor %} 
