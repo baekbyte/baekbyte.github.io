@@ -267,8 +267,26 @@ compress_html:
     envs: development
 
 
+collections:
+  blog: # This will be the new directory name (e.g., _blog instead of _posts)
+    output: true
+    permalink: /:collection/:title/
+
+exclude_posts: true
+
 # Defaults
 defaults:
+  - scope:
+      path: ""
+      type: blog
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+      
   # _posts
   - scope:
       path: ""
