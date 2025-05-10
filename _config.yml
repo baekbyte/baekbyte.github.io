@@ -272,7 +272,7 @@ compress_html:
 defaults:
   - scope:
       path: ""
-      type: blog
+      type: post
     values:
       layout: single
       author_profile: true
