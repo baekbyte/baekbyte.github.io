@@ -20,7 +20,7 @@ title                    : "Nathan's blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Nathan Baek"
-description              : "JHU, Freshman."
+description              : "JHU, Sophomore."
 url                      : "https://baekbyte.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -96,7 +96,7 @@ analytics:
 author:
   name             : "Nathan Baek"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a **freshman** at Johns Hopkins University."
+  bio              : "I am a **sophomore** at Johns Hopkins University double majoring in CS and Econ."
   location         : "Baltimore, MD"
   email            : "seokhyunbaek06@gmail.com"
   links:
@@ -117,7 +117,7 @@ author:
       # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://www.instagram.com/nathanb6332/?hl=en"
 
 # Site Footer
 footer:
