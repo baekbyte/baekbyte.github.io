@@ -1,2 +1,2 @@
 # baekbyte.github.io
-web programming
+Programming Blog
