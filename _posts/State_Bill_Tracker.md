@@ -35,6 +35,8 @@ Finally, in my main, I loop through each states and their bills to fetch desired
 
 <img width="724" alt="Screenshot 2025-06-23 at 9 55 15 PM" src="https://github.com/user-attachments/assets/49213c7c-9fdd-408e-8efc-f74074b89201" />
 
+I extraced 943 bills using Legiscan's API
+
 [**OpenStates**](https://github.com/baekbyte/State-Bill-Tracker/blob/main/openstates_ai_bill_extractor.py)
 
 For [OpenStates](https://docs.openstates.org/api-v3/), I pretty much used the same framework to extract the bills.
