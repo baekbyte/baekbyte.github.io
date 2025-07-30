@@ -10,4 +10,24 @@ For the past month, I worked on creating a new website for the Technology Policy
 
 # Development Notes
 
-Since this is purely a frontend project, I started out with installing the Create React App template
+Since this is purely a frontend project, I started out with bootstrapping Create React App.
+```bash
+npm install react-bootstrap bootstrap
+```
+
+Then, I created a basic structure for my multipage website that utilizes react-router-dom. 
+
+```bash
+components/
+├── Navigation.tsx
+├── MainPage.tsx
+├── ProjectPage.tsx
+├── ResourcePage.tsx
+├── TeamPage.tsx
+├── TeamCards.tsx
+├── Footer.tsx
+└── and CSS files for all components
+```
+
+
+
