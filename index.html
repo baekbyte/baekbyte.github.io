@@ -5,189 +5,133 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Nathan Baek’s research at Johns Hopkins University’s Normativity Lab.">
   <title>Nathan Baek</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap">
   <style>
-    :root {
-      color-scheme: light;
-      --paper: #faf9f5;
-      --ink: #242722;
-      --muted: #595e55;
-      --accent: #315444;
-      --line: #dedfd6;
-      --placeholder: #e9ede4;
-      background: var(--paper);
-      color: var(--ink);
-      font: 16px/1.55 system-ui, sans-serif;
+    body {
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+      font: 16px/1.5 Roboto, Arial, sans-serif;
     }
 
-    *, *::before, *::after { box-sizing: border-box; }
-
-    body { margin: 0; }
-
     main {
-      width: min(100% - 3rem, 45rem);
-      margin: clamp(2.5rem, 10vh, 6rem) auto 4rem;
+      width: min(800px, calc(100% - 32px));
+      margin: 56px auto 64px;
+    }
+
+    .intro {
+      display: flex;
+      align-items: stretch;
+      gap: 29px;
+    }
+
+    .headshot {
+      display: block;
+      width: 210px;
+      height: 210px;
+      border-radius: 3px;
+      box-shadow: 1px 1px 4px rgb(0 0 0 / 25%);
+      object-fit: cover;
     }
 
     .profile {
       display: flex;
-      align-items: center;
-      gap: 2rem;
-      padding-bottom: 2.75rem;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .headshot {
-      flex: none;
-      width: 8.5rem;
-      aspect-ratio: 1;
-      display: block;
-      height: auto;
-      background: var(--placeholder);
-      border: 1px solid #dce2d8;
-      border-radius: .625rem;
-      object-fit: cover;
-    }
-
-    h1, h2 {
-      margin: 0;
-      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-      font-weight: 500;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2px 0 14px;
     }
 
     h1 {
-      font-size: clamp(2.5rem, 7vw, 3.875rem);
-      line-height: 1.05;
-      letter-spacing: -.055em;
+      margin: 0;
+      font-size: 40px;
     }
 
-    .affiliation {
-      margin: .625rem 0 1rem;
-      color: var(--muted);
-    }
+    .affiliation { margin: 10px 0 0; }
 
     .profile-links {
       display: flex;
       flex-wrap: wrap;
-      gap: .5rem;
+      gap: 6px;
+      margin-top: 14px;
     }
 
-    .profile-link {
-      display: inline-flex;
-      align-items: center;
-      min-height: 2.75rem;
-      padding: .375rem .75rem;
-      border: 1px solid var(--line);
-      border-radius: .375rem;
-      color: var(--accent);
-      font-size: .8125rem;
-      font-weight: 550;
+    a {
+      color: #235fa2;
+      font-weight: 700;
       text-decoration: none;
     }
 
-    .profile-link:hover {
-      border-color: var(--accent);
-      background: var(--placeholder);
-    }
+    a:hover, a:focus-visible { text-decoration: underline; }
 
-    a:focus-visible {
-      outline: 2px solid var(--accent);
-      outline-offset: 3px;
-    }
-
-    main > section { margin-top: 2.375rem; }
-
-    .about p {
-      max-width: 61ch;
-      margin: .75rem 0 0;
-      color: var(--muted);
-    }
+    section { padding: 8px; }
 
     h2 {
-      font-size: 2.125rem;
-      line-height: 1.15;
-      letter-spacing: -.04em;
+      margin: 20px 0 16px;
+      font-size: 24px;
     }
 
-    .publication-list {
-      margin: 1.25rem 0 0;
-      padding: 0;
-      list-style: none;
+    #about p {
+      margin: 0 0 16px;
+      line-height: 1.6;
     }
 
-    .publication {
-      padding: 1.0625rem 0;
-      border-top: 1px solid var(--line);
-    }
+    #about p:last-child { margin-bottom: 0; }
 
-    .publication:last-child { border-bottom: 1px solid var(--line); }
+    .paper { margin: 0 10px; }
 
-    .publication h3 {
+    .paper + .paper { margin-top: 20px; }
+
+    .paper h3 {
       margin: 0;
-      font-size: 1rem;
-      font-weight: 600;
+      font-size: 16px;
     }
 
-    .publication a, footer a {
-      color: var(--accent);
-      text-underline-offset: .19em;
-    }
+    .paper p { margin: 6px 0 0; }
 
-    .publication p {
-      margin: .1875rem 0 0;
-      color: var(--muted);
-      font-size: .875rem;
-    }
-
-    footer {
-      margin-top: 1.5rem;
-      font-size: .875rem;
-    }
-
-    @media (max-width: 33rem) {
-      .profile {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 1.125rem;
-        padding-bottom: 1.875rem;
-      }
-
-      .headshot { width: 6.5rem; }
-      main > section { margin-top: 1.875rem; }
+    @media (max-width: 480px) {
+      main { margin-top: 28px; }
+      .intro { flex-direction: column; gap: 14px; padding: 0 8px; }
+      .headshot { width: 150px; height: 150px; }
+      .profile { padding: 0; }
+      h1 { font-size: 34px; }
+      section:first-of-type { margin-top: 4px; }
+      .paper { margin-inline: 0; }
     }
   </style>
 </head>
 <body>
   <main>
-    <header class="profile">
-      <img class="headshot" src="headshot.webp" alt="Portrait of Nathan Baek" width="136" height="136">
-      <div>
-        <h1>Nathan Baek</h1>
-        <p class="affiliation">Johns Hopkins University · The Normativity Lab</p>
+    <header class="intro">
+      <img class="headshot" src="headshot.webp" alt="Portrait of Nathan Baek" width="210" height="210">
+      <div class="profile">
+        <div>
+          <h1>Nathan Baek</h1>
+          <p class="affiliation">The Normativity Lab<br>Johns Hopkins University</p>
+        </div>
         <nav class="profile-links" aria-label="Research and professional profiles">
-          <a class="profile-link" href="https://github.com/baekbyte">GitHub</a>
-          <a class="profile-link" href="https://www.linkedin.com/in/baekseokhyun/">LinkedIn</a>
-          <a class="profile-link" href="https://scholar.google.com/scholar?q=%22Reading+the+Room%3A+Foundations%2C+Design%2C+and+Challenges+of+Normative+Competence+in+LLMs%22" aria-label="Find my paper on Google Scholar">Google Scholar</a>
+          <a href="https://github.com/baekbyte">GitHub</a>
+          <span aria-hidden="true">/</span>
+          <a href="https://www.linkedin.com/in/baekseokhyun/">LinkedIn</a>
+          <span aria-hidden="true">/</span>
+          <a href="https://scholar.google.com/scholar?q=%22Reading+the+Room%3A+Foundations%2C+Design%2C+and+Challenges+of+Normative+Competence+in+LLMs%22" aria-label="Find my paper on Google Scholar">Google Scholar</a>
         </nav>
       </div>
     </header>
 
-    <section class="about" aria-labelledby="about-heading">
+    <section id="about" aria-labelledby="about-heading">
       <h2 id="about-heading">About Me</h2>
-      <p>I study how AI agents learn the unwritten rules of working together and reason about what people expect of them. I’m interested in multi-agent systems, normative reasoning, and theory of mind.</p>
+      <p>I do research at the <a href="https://gillianhadfield.org/normativity-lab">Normativity Lab</a> at Johns Hopkins University. I study how AI agents learn the unwritten rules of working together and reason about what people expect of them.</p>
+      <p>My research interests include multi-agent systems, normative reasoning, and theory of mind.</p>
     </section>
 
-    <section aria-labelledby="publications-heading">
-      <h2 id="publications-heading">Publications</h2>
-      <ul class="publication-list" role="list">
-        <li class="publication">
-          <h3><a href="https://arxiv.org/abs/2610.10906">Reading the Room: Foundations, Design, and Challenges of Normative Competence in LLMs</a></h3>
-          <p>Andrea Wynn, Harsh Satija, <strong>Nathan Baek</strong>, Anqi Liu, Eric Nalisnick, and Gillian K. Hadfield</p>
-          <p>arXiv preprint · 2026</p>
-        </li>
-      </ul>
+    <section aria-labelledby="papers-heading">
+      <h2 id="papers-heading">Papers</h2>
+      <article class="paper">
+        <h3>Reading the Room: Foundations, Design, and Challenges of Normative Competence in LLMs</h3>
+        <p>Andrea Wynn, Harsh Satija, <strong>Nathan Baek</strong>, Anqi Liu, Eric Nalisnick, and Gillian K. Hadfield. <i>arXiv preprint</i>, 2026.</p>
+        <p>[<a href="https://arxiv.org/abs/2610.10906">arXiv</a>]</p>
+      </article>
     </section>
-
-    <footer><a href="/blog/">Blog</a></footer>
   </main>
 </body>
 </html>
