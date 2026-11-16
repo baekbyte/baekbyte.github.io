@@ -95,6 +95,11 @@
 
     .paper p { margin: 6px 0 0; }
 
+    @media (max-width: 680px) {
+      .profile-links { column-gap: 12px; }
+      .profile-links > span { display: none; }
+    }
+
     @media (max-width: 480px) {
       main { margin-top: 28px; }
       .intro { flex-direction: column; gap: 14px; padding: 0 8px; }
@@ -115,12 +120,16 @@
           <h1>Seokhyun Baek</h1>
           <p class="affiliation">The Normativity Lab<br>Johns Hopkins University</p>
         </div>
-        <nav class="profile-links" aria-label="Research and professional profiles">
+        <nav class="profile-links" aria-label="Contact and research profiles">
+          <a href="mailto:sbaek19@jh.edu">Email</a>
+          <span aria-hidden="true">/</span>
           <a href="https://github.com/baekbyte">GitHub</a>
           <span aria-hidden="true">/</span>
           <a href="https://www.linkedin.com/in/baekseokhyun/">LinkedIn</a>
           <span aria-hidden="true">/</span>
-          <a href="https://scholar.google.com/scholar?q=%22Reading+the+Room%3A+Foundations%2C+Design%2C+and+Challenges+of+Normative+Competence+in+LLMs%22" aria-label="Find my paper on Google Scholar">Google Scholar</a>
+          <a href="https://scholar.google.com/citations?user=CTIO9V0AAAAJ&amp;hl=en">Google Scholar</a>
+          <span aria-hidden="true">/</span>
+          <a href="https://orcid.org/0009-0009-0834-811X">ORCID</a>
         </nav>
       </div>
     </header>
