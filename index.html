@@ -1,4 +1,178 @@
----
-layout: home
-author_profile: true
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Seokhyun Baek’s research at Johns Hopkins University’s Normativity Lab.">
+  <title>Seokhyun Baek</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap">
+  <style>
+    body {
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+      font: 16px/1.5 Roboto, Arial, sans-serif;
+    }
+
+    main {
+      width: min(800px, calc(100% - 32px));
+      margin: 56px auto 64px;
+    }
+
+    .intro {
+      display: flex;
+      align-items: stretch;
+      gap: 29px;
+    }
+
+    .headshot {
+      flex: none;
+      width: 210px;
+      height: 210px;
+      border-radius: 3px;
+      box-shadow: 1px 1px 4px rgb(0 0 0 / 25%);
+      overflow: hidden;
+    }
+
+    .headshot img {
+      display: block;
+      width: 162%;
+      height: auto;
+      transform: translate(-17%, -22%);
+    }
+
+    .profile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2px 0 14px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    .affiliation { margin: 10px 0 0; }
+
+    .profile-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 14px;
+    }
+
+    a {
+      color: #235fa2;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover, a:focus-visible { text-decoration: underline; }
+
+    section { padding: 8px; }
+
+    h2 {
+      margin: 20px 0 16px;
+      font-size: 24px;
+    }
+
+    #about p {
+      margin: 0 0 16px;
+      line-height: 1.6;
+    }
+
+    #about p:last-child { margin-bottom: 0; }
+
+    #news p {
+      margin: 0 0 10px;
+      line-height: 1.6;
+    }
+
+    #news p:last-child { margin-bottom: 0; }
+
+    .paper { margin: 0 10px; }
+
+    .paper + .paper { margin-top: 20px; }
+
+    .paper h3 {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .paper p { margin: 6px 0 0; }
+
+    @media (max-width: 680px) {
+      .profile-links { column-gap: 12px; }
+      .profile-links > span { display: none; }
+    }
+
+    @media (max-width: 480px) {
+      main { margin-top: 28px; }
+      .intro { flex-direction: column; gap: 14px; padding: 0 8px; }
+      .headshot { width: 150px; height: 150px; }
+      .profile { padding: 0; }
+      h1 { font-size: 34px; }
+      section:first-of-type { margin-top: 4px; }
+      .paper { margin-inline: 0; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="intro">
+      <div class="headshot">
+        <img src="headshot.webp" alt="Portrait of Seokhyun Baek" width="900" height="960">
+      </div>
+      <div class="profile">
+        <div>
+          <h1>Seokhyun Baek</h1>
+          <p class="affiliation">The Normativity Lab<br>Johns Hopkins University</p>
+        </div>
+        <nav class="profile-links" aria-label="Contact and research profiles">
+          <a href="mailto:sbaek19@jh.edu">Email</a>
+          <span aria-hidden="true">/</span>
+          <a href="https://github.com/baekbyte">GitHub</a>
+          <span aria-hidden="true">/</span>
+          <a href="https://www.linkedin.com/in/baekseokhyun/">LinkedIn</a>
+          <span aria-hidden="true">/</span>
+          <a href="https://scholar.google.com/citations?user=CTIO9V0AAAAJ&amp;hl=en">Google Scholar</a>
+          <span aria-hidden="true">/</span>
+          <a href="https://orcid.org/0009-0009-0834-811X">ORCID</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <p>I’m a junior at Johns Hopkins University pursuing a B.S. in computer science. I do research at the <a href="https://gillianhadfield.org/normativity-lab">Normativity Lab</a> under <a href="https://gillianhadfield.org/">Gillian Hadfield</a>, studying how AI agents learn social norms and reason about what people expect of them.</p>
+      <p>At the <a href="https://alliance-ai.cs.jhu.edu/people/">Alliance AI Lab</a>, I apply this research to human–robot interaction. I’m also an external collaborator with the <a href="https://social-ai.ca/">Social AI Research Group</a>, where I’ve contributed to <a href="https://github.com/social-ai-uoft/sorrel">Sorrel</a>, an open-source framework for building multi-agent environments.</p>
+      <p>I’m broadly interested in AI alignment, especially what it would take for models to reason more like people. My current interests include mechanistic interpretability, neuroscience-inspired machine learning architectures, emergent cognition, and multi-agent reinforcement learning (MARL).</p>
+    </section>
+
+    <section id="news" aria-labelledby="news-heading">
+      <h2 id="news-heading">Recent News</h2>
+      <p><time datetime="2026-11">November 2026</time> · <a href="https://arxiv.org/abs/2610.10906">Reading the Room</a> was accepted to the <a href="https://www.mere-ai-workshop.com/">Machine Ethics and Reasoning in AI (MERe AI) Workshop</a>.</p>
+      <p><time datetime="2026-11">November 2026</time> · Our <a href="https://arxiv.org/abs/2611.08613">NormGym</a> preprint is out. It introduces a benchmark for how AI agents learn social norms through interaction.</p>
+      <p><time datetime="2026-10">October 2026</time> · <a href="https://arxiv.org/abs/2610.10906">Reading the Room</a> was accepted as a poster at the <a href="https://ai.jhu.edu/event/data-science-and-ai-institute-fall-2026-symposium-artificial-intelligence-and-human-learning/">Johns Hopkins DSAI Fall Symposium</a>.</p>
+      <p><time datetime="2026-10">October 2026</time> · Nominated for the <a href="https://cra.org/about/awards/outstanding-undergraduate-researcher-award/">CRA Outstanding Undergraduate Researcher Award</a>.</p>
+      <p><time datetime="2026-06">June 2026</time> · I received the Pistritto Research Fellowship and joined the <a href="https://alliance-ai.cs.jhu.edu/people/">Alliance AI Lab</a> for summer research.</p>
+    </section>
+
+    <section aria-labelledby="papers-heading">
+      <h2 id="papers-heading">Papers</h2>
+      <article class="paper">
+        <h3>NormGym: Evaluating Normative Competence through Social Interaction</h3>
+        <p>Binze Li, Zihuan Zhang, <strong>Seokhyun Baek</strong>, Gillian K. Hadfield, and Tianmin Shu. <i>arXiv preprint</i>, 2026.</p>
+        <p>[<a href="https://arxiv.org/abs/2611.08613">arXiv</a>] | [<a href="https://normgym.github.io/normgym-page/">Project Page</a>]</p>
+      </article>
+      <article class="paper">
+        <h3>Reading the Room: Foundations, Design, and Challenges of Normative Competence in LLMs</h3>
+        <p>Andrea Wynn, Harsh Satija, <strong>Seokhyun Baek</strong>, Anqi Liu, Eric Nalisnick, and Gillian K. Hadfield. <i>arXiv preprint</i>, 2026.</p>
+        <p>Accepted to the <a href="https://www.mere-ai-workshop.com/">MERe AI 2026 Workshop</a>.</p>
+        <p>[<a href="https://arxiv.org/abs/2610.10906">arXiv</a>]</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
