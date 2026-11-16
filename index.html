@@ -26,12 +26,19 @@
     }
 
     .headshot {
-      display: block;
+      flex: none;
       width: 210px;
       height: 210px;
       border-radius: 3px;
       box-shadow: 1px 1px 4px rgb(0 0 0 / 25%);
-      object-fit: cover;
+      overflow: hidden;
+    }
+
+    .headshot img {
+      display: block;
+      width: 162%;
+      height: auto;
+      transform: translate(-17%, -22%);
     }
 
     .profile {
@@ -114,7 +121,9 @@
 <body>
   <main>
     <header class="intro">
-      <img class="headshot" src="headshot.webp" alt="Portrait of Seokhyun Baek" width="210" height="210">
+      <div class="headshot">
+        <img src="headshot.webp" alt="Portrait of Seokhyun Baek" width="900" height="960">
+      </div>
       <div class="profile">
         <div>
           <h1>Seokhyun Baek</h1>
