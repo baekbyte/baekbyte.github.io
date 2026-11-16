@@ -77,6 +77,13 @@
 
     #about p:last-child { margin-bottom: 0; }
 
+    #news p {
+      margin: 0 0 10px;
+      line-height: 1.6;
+    }
+
+    #news p:last-child { margin-bottom: 0; }
+
     .paper { margin: 0 10px; }
 
     .paper + .paper { margin-top: 20px; }
@@ -124,8 +131,20 @@
       <p>My research interests include multi-agent systems, normative reasoning, and theory of mind.</p>
     </section>
 
+    <section id="news" aria-labelledby="news-heading">
+      <h2 id="news-heading">Recent News</h2>
+      <p><time datetime="2026-11">November 2026</time> · Our <a href="https://arxiv.org/abs/2611.08613">NormGym</a> preprint is out. It introduces a benchmark for how AI agents learn social norms through interaction.</p>
+      <p><time datetime="2026-10">October 2026</time> · <a href="https://arxiv.org/abs/2610.10906">Reading the Room</a> was accepted as a poster at the <a href="https://ai.jhu.edu/event/data-science-and-ai-institute-fall-2026-symposium-artificial-intelligence-and-human-learning/">Johns Hopkins DSAI Fall Symposium</a>.</p>
+      <p><time datetime="2026-06">June 2026</time> · I received the Pistritto Research Fellowship and joined the <a href="https://alliance-ai.cs.jhu.edu/people/">Alliance AI Lab</a> for summer research.</p>
+    </section>
+
     <section aria-labelledby="papers-heading">
       <h2 id="papers-heading">Papers</h2>
+      <article class="paper">
+        <h3>NormGym: Evaluating Normative Competence through Social Interaction</h3>
+        <p>Binze Li, Zihuan Zhang, <strong>Seokhyun Baek</strong>, Gillian K. Hadfield, and Tianmin Shu. <i>arXiv preprint</i>, 2026.</p>
+        <p>[<a href="https://arxiv.org/abs/2611.08613">arXiv</a>]</p>
+      </article>
       <article class="paper">
         <h3>Reading the Room: Foundations, Design, and Challenges of Normative Competence in LLMs</h3>
         <p>Andrea Wynn, Harsh Satija, <strong>Nathan Baek</strong>, Anqi Liu, Eric Nalisnick, and Gillian K. Hadfield. <i>arXiv preprint</i>, 2026.</p>
